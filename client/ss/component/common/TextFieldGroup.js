@@ -6,7 +6,6 @@ const TextFieldGroup = ({
   name,
   placeholder,
   value,
-  label,
   error,
   info,
   type,
@@ -27,7 +26,7 @@ const TextFieldGroup = ({
         disabled={disabled}
       />
       {info && <small className="form-text text-muted">{info}</small>}
-      {error && <div classNames="invalid-feedback">{error}</div>}
+      {error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
 };
