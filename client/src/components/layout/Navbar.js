@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -17,6 +18,11 @@ class Navbar extends Component {
 
     const authLinks = (
       <ul className="navbar-nav ml-auto">
+        <li className="nav-item">
+          <Link className="nav-link" to="/feed">
+            Post Feed
+          </Link>
+        </li>
         <li className="nav-item">
           <Link className="nav-link" to="/dashboard">
             Dashboard
