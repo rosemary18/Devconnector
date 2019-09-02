@@ -8,7 +8,8 @@
     "start": "node server",
     "server": "nodemon server",
     "client": "npm start --prefix client",
-    "both": "concurrently \"npm run server\" \"npm run client\""
+    "both": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postBuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Rosemary18",
   "license": "ISC",
